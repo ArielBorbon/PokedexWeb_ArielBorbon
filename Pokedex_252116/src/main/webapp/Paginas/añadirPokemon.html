@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Pokedex</title>
+</head>
+<body>
+<div class="main-div">
+
+<div class="menu-bar">
+<h1 class="pokedex-label">Pokedex</h1>
+</div>
+
+ 
+<div class="main-container">
+<div class="añadir-pokemon">
+    <h2 class="añadirPokemon-titulo">Añadir Pokemon</h2>
+    <form class="pokemon-form" action="POST" >
+
+        <div class="input-div">
+            <p class="input-title">Nombre:</p>
+            <input class="input" type="text" placeholder="Nombre del Pokemon" required>
+        </div>
+
+                <div class="input-div">
+            <p class="input-title">Tipo:</p>
+            <input class="input" type="text" placeholder="Tipo" required>
+        </div>
+
+                <div class="input-div">
+            <p class="input-title">Numero:</p>
+            <input class="input" type="number" placeholder="Numero" step="1" required>
+
+        </div>
+
+                <div class="input-div">
+            <p class="input-title">Url de imagen:</p>
+            <input class="input" type="text" placeholder="Url de imagen" required>
+
+        </div>
+
+
+    </form>
+
+
+</div>
+<div class="añadir-div">
+    <h1>Añadir Pokemon a Pokedex:</h1>
+    <a href="pokeLista.html"><button class="añadir-btn"><span class="añadirPokemon-label">Confirmar</span></button></a>
+    <a href="pokeLista.html"><button class="cancelar-btn"><span class="añadirPokemon-label">Cancelar</span></button></a>
+    <div class="errores">
+        <p> </p>
+    </div>
+</div>
+
+
+</div>
+</body>
+
+</html> 
