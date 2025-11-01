@@ -1,4 +1,4 @@
-package com.mycompany.pokedex_252116;
+package com.mycompany.pokedex_arielborbon;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;

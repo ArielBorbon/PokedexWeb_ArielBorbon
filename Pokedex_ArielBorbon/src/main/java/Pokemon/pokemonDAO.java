@@ -18,11 +18,11 @@ public class pokemonDAO {
     }
     
     
-    public pokemonDTO añadirPokemon (pokemonDTO pokemon){
+    public String añadirPokemon (pokemonDTO pokemon){
         
         String errores = "";
         
-        if (pokemon.getNumero() < 0 || pokemon.getNumero() > 1025 ) {
+        if (pokemon.getNumero() <= 0 || pokemon.getNumero() > 1025 ) {
             errores += "Numero no registrado en la pokedex...";
         }
         
@@ -39,13 +39,12 @@ public class pokemonDAO {
         }
         
         if (errores.isEmpty()) {
-            return null; //pendiente esto es de cale para pasarlo despues al servlet
-        }else{
+            DataSource.getInstancia().getListaPokemones().add(pokemon);
             
-        
-        
-        DataSource.getInstancia().getListaPokemones().add(pokemon);
-        return pokemon;
+            return null; 
+            
+        } else {
+            return errores;
         }
     }
     
